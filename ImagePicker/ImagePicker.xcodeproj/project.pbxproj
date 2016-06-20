@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		299E8F861D1791B500DFE180 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E8F851D1791B500DFE180 /* AppDelegate.swift */; };
-		299E8F881D1791B500DFE180 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E8F871D1791B500DFE180 /* ViewController.swift */; };
-		299E8F8B1D1791B500DFE180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299E8F891D1791B500DFE180 /* Main.storyboard */; };
 		299E8F8E1D1791B500DFE180 /* ImagePicker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 299E8F8C1D1791B500DFE180 /* ImagePicker.xcdatamodeld */; };
 		299E8F901D1791B500DFE180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299E8F8F1D1791B500DFE180 /* Assets.xcassets */; };
 		299E8F931D1791B500DFE180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 299E8F911D1791B500DFE180 /* LaunchScreen.storyboard */; };
 		299E8F9E1D1791B500DFE180 /* ImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E8F9D1D1791B500DFE180 /* ImagePickerTests.swift */; };
 		299E8FA91D1791B500DFE180 /* ImagePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E8FA81D1791B500DFE180 /* ImagePickerUITests.swift */; };
+		299E8FB81D17926600DFE180 /* PictureSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E8FB71D17926600DFE180 /* PictureSelectVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +36,6 @@
 /* Begin PBXFileReference section */
 		299E8F821D1791B500DFE180 /* ImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		299E8F851D1791B500DFE180 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		299E8F871D1791B500DFE180 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		299E8F8A1D1791B500DFE180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		299E8F8D1D1791B500DFE180 /* ImagePicker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImagePicker.xcdatamodel; sourceTree = "<group>"; };
 		299E8F8F1D1791B500DFE180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		299E8F921D1791B500DFE180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		299E8FA41D1791B500DFE180 /* ImagePickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		299E8FA81D1791B500DFE180 /* ImagePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerUITests.swift; sourceTree = "<group>"; };
 		299E8FAA1D1791B500DFE180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299E8FB71D17926600DFE180 /* PictureSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureSelectVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +97,8 @@
 		299E8F841D1791B500DFE180 /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
+				299E8FB61D17924C00DFE180 /* PictureSelector */,
 				299E8F851D1791B500DFE180 /* AppDelegate.swift */,
-				299E8F871D1791B500DFE180 /* ViewController.swift */,
-				299E8F891D1791B500DFE180 /* Main.storyboard */,
 				299E8F8F1D1791B500DFE180 /* Assets.xcassets */,
 				299E8F911D1791B500DFE180 /* LaunchScreen.storyboard */,
 				299E8F941D1791B500DFE180 /* Info.plist */,
@@ -126,6 +123,14 @@
 				299E8FAA1D1791B500DFE180 /* Info.plist */,
 			);
 			path = ImagePickerUITests;
+			sourceTree = "<group>";
+		};
+		299E8FB61D17924C00DFE180 /* PictureSelector */ = {
+			isa = PBXGroup;
+			children = (
+				299E8FB71D17926600DFE180 /* PictureSelectVC.swift */,
+			);
+			path = PictureSelector;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +239,6 @@
 			files = (
 				299E8F931D1791B500DFE180 /* LaunchScreen.storyboard in Resources */,
 				299E8F901D1791B500DFE180 /* Assets.xcassets in Resources */,
-				299E8F8B1D1791B500DFE180 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299E8F881D1791B500DFE180 /* ViewController.swift in Sources */,
+				299E8FB81D17926600DFE180 /* PictureSelectVC.swift in Sources */,
 				299E8F861D1791B500DFE180 /* AppDelegate.swift in Sources */,
 				299E8F8E1D1791B500DFE180 /* ImagePicker.xcdatamodeld in Sources */,
 			);
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		299E8F891D1791B500DFE180 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				299E8F8A1D1791B500DFE180 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		299E8F911D1791B500DFE180 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -404,6 +400,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuliang.ImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -415,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ImagePicker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuliang.ImagePicker;
 				PRODUCT_NAME = "$(TARGET_NAME)";

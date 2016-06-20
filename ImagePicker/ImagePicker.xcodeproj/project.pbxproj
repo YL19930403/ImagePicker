@@ -14,6 +14,7 @@
 		299E8F9E1D1791B500DFE180 /* ImagePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E8F9D1D1791B500DFE180 /* ImagePickerTests.swift */; };
 		299E8FA91D1791B500DFE180 /* ImagePickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E8FA81D1791B500DFE180 /* ImagePickerUITests.swift */; };
 		299E8FB81D17926600DFE180 /* PictureSelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E8FB71D17926600DFE180 /* PictureSelectVC.swift */; };
+		299E8FBA1D17D98300DFE180 /* UIImage+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299E8FB91D17D98300DFE180 /* UIImage+Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		299E8FA81D1791B500DFE180 /* ImagePickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerUITests.swift; sourceTree = "<group>"; };
 		299E8FAA1D1791B500DFE180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		299E8FB71D17926600DFE180 /* PictureSelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureSelectVC.swift; sourceTree = "<group>"; };
+		299E8FB91D17D98300DFE180 /* UIImage+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Category.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				299E8FB71D17926600DFE180 /* PictureSelectVC.swift */,
+				299E8FB91D17D98300DFE180 /* UIImage+Category.swift */,
 			);
 			path = PictureSelector;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				299E8FB81D17926600DFE180 /* PictureSelectVC.swift in Sources */,
 				299E8F861D1791B500DFE180 /* AppDelegate.swift in Sources */,
 				299E8F8E1D1791B500DFE180 /* ImagePicker.xcdatamodeld in Sources */,
+				299E8FBA1D17D98300DFE180 /* UIImage+Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

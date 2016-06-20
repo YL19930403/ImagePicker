@@ -84,7 +84,17 @@ extension PictureSelectVC : UICollectionViewDataSource, UICollectionViewDelegate
      */
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        pictureImages.append(image)
+        
+        ///在这里拿到的图片需要处理一下（图片太大导致内存飙升），处理的两种方法：
+            //1.对该图片进行解压缩（解压缩过程比较耗性能，并且最终的图片会失帧，一般不推荐）, 试着比较data1和data2
+//        let data1 = UIImageJPEGRepresentation(image, 1.0)
+//        data1?.writeToFile("/Users/yuliang/Desktop/1.jpg", atomically: true )
+//        let data2 = UIImageJPEGRepresentation(image, 0.1)
+//        data2?.writeToFile("/Users/yuliang/Desktop/2.jpg", atomically: true )
+        
+        ///方法2 : 根据宽高比重绘图片
+        let newImage = image.imageWithScale(300)
+        pictureImages.append(newImage)
         collectionV.reloadData()
         
         //如果实现了该方法，需要我们自己关闭图片选择器
@@ -186,6 +196,7 @@ class  PictureCell : UICollectionViewCell {
     }()
     private lazy var addBtn : UIButton = {
         let btn = UIButton()
+        btn.imageView?.contentMode = .ScaleAspectFill 
         btn.setImage(UIImage(named:"compose_pic_add"), forState: UIControlState.Normal)
         btn.addTarget(self , action:#selector(PictureCell.addBtnClick), forControlEvents: UIControlEvents.TouchUpInside)
         return btn
